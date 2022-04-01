@@ -1,0 +1,18 @@
+<h3>Añadir personaje</h3>
+    <hr />
+    <form (ngSubmit)="AddCharacter()">
+      <!-- [(ngModel)] -> esta sintaxis escucha y emite el valor ingresado -->
+      <input
+        placeholder="Nombre"
+        type="text"
+        name="name"
+        [(ngModel)]="newCharacter.name"
+      />
+      <input
+        placeholder="Poder"
+        type="number"
+        name="power"
+        [(ngModel)]="newCharacter.power"
+      />
+      <button type="submit">Agregar</button>
+    </form>
